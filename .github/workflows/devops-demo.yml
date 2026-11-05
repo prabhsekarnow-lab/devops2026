@@ -49,4 +49,4 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Deploy Application'
           change-request-number: ${{ needs.change-request.outputs.change-request-number }}
-          change-request-details: '{"state":"3"}'
+          change-request-details: '{"state":"3","close_code":"successful","close_notes":"Deployment completed successfully via GitHub Actions pipeline"}'
